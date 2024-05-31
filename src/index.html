@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Training form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">
+Fitness Form
+</h1>
+<p id="description">This is a form for creating a personalized training plan for people who want to start training</p>
+<form id="survey-form">
+   <fieldset>
+  <label id="name-label">Enter Your Name: <input type="text" id="name" name="name"  required placeholder="Enter your name"/></label>
+  <label id="email-label">Email<input type="email" id="email" name="email" required placeholder="Enter your email"></input></label>
+   <label>Age<input type="text" id="age" name="age" placeholder="Age"></input></label>
+    <label>Telephone Number<input type="text" id="telephone-number" name="telephone-number" placeholder="Enter your telephone number"></input></label>
+    <label>Height<input type="text" id="height" name="height" placeholder="Height"></input></label>
+    <label>Weight<input type="text" id="weight" name="weight" placeholder="Weight"></input></label>
+  <label id="number-label">Numbers Of Days That You Have For Training
+<input type="number" id="number" name="number-of-workouts" min="1" max="7" placeholder="Days"></input></label>
+ </fieldset>
+  <fieldset>
+<label for="dropdown">Where Do You Train
+  <select id="dropdown" name="place-for-train">
+    <option value="">(select one)</option>
+    <option value="1">Home</option>
+    <option value="2">Gym</option>
+    <option value="3">Park</option>
+  </select>
+</label>
+ <label>Gender</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male" class="inline"/> Male</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female" class="inline"/> Female</label>
+ </fieldset>
+<fieldset >
+  <label>Which are your goals </label>
+    <label><input type="checkbox" name="goals" value="hypertrophy" class="inline"></input>Hypertrophy</label>
+  <label><input type="checkbox" name="goals" value="endurance" class="inline"></input>Endurance</label>
+  <label><input type="checkbox" name="goals" value="strength" class="inline"></input >Strength</label>
+  <label>
+    Any comments or suggestions?
+    <textarea name="suggestions" rows="5" cols="60" placeholder="Enter your comment here"></textarea>
+    
+</fieldset>
+<input type="submit" id="submit"></input>
+</form>
+</body>
+</html>
